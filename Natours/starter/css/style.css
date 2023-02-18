@@ -1,11 +1,8 @@
-/*
-COLORS:
-
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
-
-*/
+:root {
+  --clr-light-green: #7ed56f;
+  --clr-medium-green: #55c57a;
+  --clr-dark-green: #28b485;
+}
 
 * {
   margin: 0;
@@ -19,4 +16,13 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: #777;
+  padding: 30px;
+}
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgb(128, 214, 113, 0.8), rgb(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
